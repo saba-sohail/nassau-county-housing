@@ -19,11 +19,11 @@ cursor.execute("DELETE FROM listings WHERE lotAreaValue IS NULL or lotAreaUnit I
 cursor.execute("DELETE FROM listings where lotAreaValue = 0")
 
 # update taxAssessedValue to be the price column where it is 0 or null
-cursor.execute("""
-               UPDATE listings 
-               SET taxAssessedValue = price 
-               WHERE taxAssessedValue IS NULL OR taxAssessedValue = 0
-               """)
+# cursor.execute("""
+#               UPDATE listings 
+#               SET taxAssessedValue = price 
+#               WHERE taxAssessedValue IS NULL OR taxAssessedValue = 0
+#               """)
 
 
 # updating any entries with null latitude and longitude
